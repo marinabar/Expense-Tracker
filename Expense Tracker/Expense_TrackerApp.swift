@@ -8,7 +8,10 @@
 import SwiftUI
 
 @main
-struct Expense_TrackerApp: App {
+struct Expense_TrackerApp: App {    
+    init() {
+    RealmHelper.setupRealm()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

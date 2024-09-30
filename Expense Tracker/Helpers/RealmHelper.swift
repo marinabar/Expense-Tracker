@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import RealmSwift
+
+class RealmHelper {
+    static func setupRealm() {
+        Realm.Configuration.defaultConfiguration.deleteRealmIfMigrationNeeded = true
+    }
+}

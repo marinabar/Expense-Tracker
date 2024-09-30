@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Constants {
+    static let appTintColor: Color = .red
+}

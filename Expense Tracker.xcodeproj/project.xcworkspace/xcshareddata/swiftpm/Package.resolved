@@ -1,0 +1,33 @@
+{
+  "originHash" : "d3efac108ff96f42e3a505353dd3f67ac6f51eae44c741472068e5d3baa8659a",
+  "pins" : [
+    {
+      "identity" : "randomcolorswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/RandomColorSwift.git",
+      "state" : {
+        "revision" : "ab01c6eff99f40c5e23ffcb957eb3971f937f106",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "b36f2436c2746c32b1f93dcc06ea8b859671a767",
+        "version" : "14.12.1"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "revision" : "9b9992d59a5148eb557e6c0445fec05009022c8c",
+        "version" : "10.53.1"
+      }
+    }
+  ],
+  "version" : 3
+}
