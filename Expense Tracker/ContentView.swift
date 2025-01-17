@@ -15,7 +15,7 @@ struct ContentView: View {
                 ExpenseLog()
             }
            .tabItem {
-                Image(systemName: "pencil")
+                Image(systemName: "plus.app")
                 Text("Add Expense")
             }.tag(0)
             NavigationStack {
@@ -30,13 +30,19 @@ struct ContentView: View {
             }
            .tabItem {
                   Image(systemName: "chart.bar")
-                  Text("Analysis")
+                  Text("Insights")
             }.tag(2)
             NavigationStack {
-                PhotoAnalysisView()
+                MistralPhotoView()
             }
             .tabItem {
-                    Label("Analyze Receipt", systemImage: "photo")
+                    Label("Save Receipt", systemImage: "photo")
+            }.tag(3)
+            NavigationStack {
+                ChatView()
+            }
+            .tabItem {
+                    Label("Chat", systemImage: "bubble.right.and.text.bubble.left.fill")
             }.tag(3)
         }
         .accentColor(Constants.appTintColor)

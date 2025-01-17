@@ -11,7 +11,6 @@
 		A40889862C9034D60067CF9C /* ExpenseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40889852C9034D60067CF9C /* ExpenseLog.swift */; };
 		A40889882C9035330067CF9C /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40889872C9035330067CF9C /* AnalysisView.swift */; };
 		A408898A2C9381C20067CF9C /* GraphicalAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40889892C9381C20067CF9C /* GraphicalAnalysisView.swift */; };
-		A408898C2C94AB640067CF9C /* PhotoAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A408898B2C94AB640067CF9C /* PhotoAnalysisView.swift */; };
 		A40889912CA405210067CF9C /* RandomColor in Frameworks */ = {isa = PBXBuildFile; productRef = A40889902CA405210067CF9C /* RandomColor */; };
 		A43AAEA82C8C883600965AB1 /* Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAEA72C8C883600965AB1 /* Expense_TrackerApp.swift */; };
 		A43AAEAA2C8C883600965AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAEA92C8C883600965AB1 /* ContentView.swift */; };
@@ -20,6 +19,11 @@
 		A43AAED32C8C8F3F00965AB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAED22C8C8F3E00965AB1 /* Constants.swift */; };
 		A43AAED52C8C94A200965AB1 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAED42C8C94A200965AB1 /* ExpenseViewController.swift */; };
 		A43AAED72C8C950600965AB1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAED62C8C950600965AB1 /* Expense.swift */; };
+		A457301F2D341C1300266218 /* MistralPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457301E2D341C1300266218 /* MistralPhotoView.swift */; };
+		A45730212D341E7D00266218 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A45730202D341E7D00266218 /* Config.xcconfig */; };
+		A45730232D341F0B00266218 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A45730222D341F0B00266218 /* .gitignore */; };
+		A45730252D345F8D00266218 /* AIReceiptEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45730242D345F8D00266218 /* AIReceiptEntriesView.swift */; };
+		A45730282D3AB46F00266218 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45730272D3AB46F00266218 /* ChatView.swift */; };
 		A486AE562C8C9A7300E5A1FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A486AE552C8C9A7300E5A1FD /* RealmSwift */; };
 		A486AE582C8CBDD800E5A1FD /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486AE572C8CBDD800E5A1FD /* RealmHelper.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +42,11 @@
 		A43AAED22C8C8F3E00965AB1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A43AAED42C8C94A200965AB1 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		A43AAED62C8C950600965AB1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		A457301E2D341C1300266218 /* MistralPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistralPhotoView.swift; sourceTree = "<group>"; };
+		A45730202D341E7D00266218 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		A45730222D341F0B00266218 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A45730242D345F8D00266218 /* AIReceiptEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIReceiptEntriesView.swift; sourceTree = "<group>"; };
+		A45730272D3AB46F00266218 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		A486AE572C8CBDD800E5A1FD /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +69,9 @@
 				A40889852C9034D60067CF9C /* ExpenseLog.swift */,
 				A40889872C9035330067CF9C /* AnalysisView.swift */,
 				A40889892C9381C20067CF9C /* GraphicalAnalysisView.swift */,
-				A408898B2C94AB640067CF9C /* PhotoAnalysisView.swift */,
+				A457301E2D341C1300266218 /* MistralPhotoView.swift */,
+				A45730242D345F8D00266218 /* AIReceiptEntriesView.swift */,
+				A45730272D3AB46F00266218 /* ChatView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,6 +103,9 @@
 				A43AAEAB2C8C883700965AB1 /* Assets.xcassets */,
 				A43AAEAD2C8C883700965AB1 /* Preview Content */,
 				A43AAED42C8C94A200965AB1 /* ExpenseViewController.swift */,
+				A45730202D341E7D00266218 /* Config.xcconfig */,
+				A45730222D341F0B00266218 /* .gitignore */,
+				A45730262D3582B200266218 /* Temp */,
 			);
 			path = "Expense Tracker";
 			sourceTree = "<group>";
@@ -112,6 +126,14 @@
 				A40889822C9027FB0067CF9C /* Utils.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A45730262D3582B200266218 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				A408898B2C94AB640067CF9C /* PhotoAnalysisView.swift */,
+			);
+			path = Temp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45730232D341F0B00266218 /* .gitignore in Resources */,
 				A43AAEAF2C8C883700965AB1 /* Preview Assets.xcassets in Resources */,
+				A45730212D341E7D00266218 /* Config.xcconfig in Resources */,
 				A43AAEAC2C8C883700965AB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,15 +218,17 @@
 			files = (
 				A43AAEAA2C8C883600965AB1 /* ContentView.swift in Sources */,
 				A486AE582C8CBDD800E5A1FD /* RealmHelper.swift in Sources */,
-				A408898C2C94AB640067CF9C /* PhotoAnalysisView.swift in Sources */,
 				A43AAED52C8C94A200965AB1 /* ExpenseViewController.swift in Sources */,
 				A40889832C9027FB0067CF9C /* Utils.swift in Sources */,
 				A408898A2C9381C20067CF9C /* GraphicalAnalysisView.swift in Sources */,
+				A457301F2D341C1300266218 /* MistralPhotoView.swift in Sources */,
+				A45730282D3AB46F00266218 /* ChatView.swift in Sources */,
 				A43AAEA82C8C883600965AB1 /* Expense_TrackerApp.swift in Sources */,
 				A40889862C9034D60067CF9C /* ExpenseLog.swift in Sources */,
 				A43AAED32C8C8F3F00965AB1 /* Constants.swift in Sources */,
 				A40889882C9035330067CF9C /* AnalysisView.swift in Sources */,
 				A43AAED72C8C950600965AB1 /* Expense.swift in Sources */,
+				A45730252D345F8D00266218 /* AIReceiptEntriesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +237,7 @@
 /* Begin XCBuildConfiguration section */
 		A43AAEC62C8C883700965AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45730202D341E7D00266218 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -274,6 +301,7 @@
 		};
 		A43AAEC72C8C883700965AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45730202D341E7D00266218 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

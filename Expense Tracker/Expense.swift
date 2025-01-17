@@ -24,6 +24,6 @@ class Expense: Object, Identifiable {
     @objc dynamic var expenseName: String = "Default"
     
     var category: Category? {
-           return Category(rawValue: categoryString)
+        return Category(rawValue: categoryString) ?? .miscellaneous
        }
 }

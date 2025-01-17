@@ -15,7 +15,7 @@ import RealmSwift
 struct PhotoAnalysisView: View {
     @State private var selectedItem: PhotosPickerItem?
     @State private var image: UIImage?
-    @State private var receiptData: ReceiptData?
+    @State private var r: R?
     @State private var recognizedTexts: [String] = [] // Store recognized texts
     @State private var showBubbles: Bool = false // Control navigation to the bubble view
     
@@ -93,19 +93,19 @@ struct PhotoAnalysisView: View {
         try? handler.perform([request])
     }
     
-    func parseReceiptText(_ text: String) -> ReceiptData? {
+    func parseReceiptText(_ text: String) -> R? {
         // Implement your logic to parse text and extract receipt data
-        return ReceiptData(date: "2024-09-13", receiptNumber: "12345", items: [ReceiptItem(name: "Item 1", amount: 10.0)])
+        return R(date: "2024-09-13", receiptNumber: "12345", items: [ReceiptItem(name: "Item 1", amount: 10.0)])
     }
 }
 
-struct ReceiptData {
+struct R {
     let date: String
     let receiptNumber: String
-    let items: [ReceiptItem]
+    let items: [RI]
 }
 
-struct ReceiptItem: Hashable {
+struct RI: Hashable {
     let name: String
     let amount: Double
 }
