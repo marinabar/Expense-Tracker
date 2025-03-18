@@ -42,8 +42,8 @@ struct ContentView: View {
                 ChatView()
             }
             .tabItem {
-                    Label("Chat", systemImage: "bubble.right.and.text.bubble.left.fill")
-            }.tag(3)
+                    Label("Chat", systemImage: "bubble.left.and.text.bubble.right")
+            }.tag(4)
         }
         .accentColor(Constants.appTintColor)
     }

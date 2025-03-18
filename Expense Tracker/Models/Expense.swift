@@ -9,11 +9,18 @@ import RealmSwift
 import Foundation
 
 enum Category: String, CaseIterable {
-    case food
+    case supermarket_food = "supermarket food"
     case transportation
     case housing
     case entertainment
     case miscellaneous
+    case restaurant_dish = "restaurant dish"
+    case furniture
+    case healthcare
+    case beauty
+    case clothing
+    case snack
+    case investement
 }
 
 class Expense: Object, Identifiable {

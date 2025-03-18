@@ -127,8 +127,8 @@ struct AIReceiptEntriesView: View {
     // Parse the API response
     func parseResponse(_ responseJSON: [String: Any]) -> [EditableExpense]? {
         // Extract the content from the nested response structure
-        guard let choicesArray = responseJSON["choices"] as? NSArray,
-              let firstChoice = choicesArray.firstObject as? [String: Any],
+        guard let choicesArray = responseJSON["choices"] as? [[String: Any]],
+              let firstChoice = choicesArray.first,
               let message = firstChoice["message"] as? [String: Any],
               let content = message["content"] as? String else {
             print("Failed to extract message content")
@@ -141,9 +141,7 @@ struct AIReceiptEntriesView: View {
         
         // Setup date decoder
         let decoder = JSONDecoder()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        decoder.dateDecodingStrategy = .formatted(Utils.dateFormatter)
         
         do {
             let receiptData = try decoder.decode(ReceiptData.self, from: jsonData)

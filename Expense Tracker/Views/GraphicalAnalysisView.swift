@@ -134,7 +134,7 @@ struct GraphicalAnalysisView: View {
     // Setup Realm with sample data
     let realm = try! Realm()
     let sampleExpenses = [
-        Expense(value: ["amount": 50.0, "categoryString": Category.food.rawValue]),
+        Expense(value: ["amount": 50.0, "categoryString": Category.supermarket_food.rawValue]),
         Expense(value: ["amount": 30.0, "categoryString": Category.transportation.rawValue]),
         Expense(value: ["amount": 20.0, "categoryString": Category.housing.rawValue])
     ]
