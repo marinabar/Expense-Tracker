@@ -43,10 +43,6 @@ struct MistralPhotoView: View {
     }
     
     func sendRequest(with image: UIImage) {
-        guard let apiKey = Utils.getAPIKey() else {
-            print("API Key not set")
-            return
-        }
         
         // Convert image to base64
         guard let imageData = image.jpegData(compressionQuality: 0.9)?.base64EncodedString() else {

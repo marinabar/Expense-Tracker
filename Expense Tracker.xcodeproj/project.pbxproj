@@ -17,13 +17,15 @@
 		A43AAEAC2C8C883700965AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43AAEAB2C8C883700965AB1 /* Assets.xcassets */; };
 		A43AAEAF2C8C883700965AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43AAEAE2C8C883700965AB1 /* Preview Assets.xcassets */; };
 		A43AAED32C8C8F3F00965AB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAED22C8C8F3E00965AB1 /* Constants.swift */; };
-		A43AAED52C8C94A200965AB1 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAED42C8C94A200965AB1 /* ExpenseViewController.swift */; };
 		A43AAED72C8C950600965AB1 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43AAED62C8C950600965AB1 /* Expense.swift */; };
 		A457301F2D341C1300266218 /* MistralPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457301E2D341C1300266218 /* MistralPhotoView.swift */; };
 		A45730212D341E7D00266218 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A45730202D341E7D00266218 /* Config.xcconfig */; };
 		A45730232D341F0B00266218 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A45730222D341F0B00266218 /* .gitignore */; };
 		A45730252D345F8D00266218 /* AIReceiptEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45730242D345F8D00266218 /* AIReceiptEntriesView.swift */; };
 		A45730282D3AB46F00266218 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45730272D3AB46F00266218 /* ChatView.swift */; };
+		A457302C2D3ADDA800266218 /* ExpenseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457302B2D3ADDA800266218 /* ExpenseService.swift */; };
+		A457302F2D3AF88200266218 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457302E2D3AF88200266218 /* ChatViewModel.swift */; };
+		A45730312D42687600266218 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45730302D42687600266218 /* Message.swift */; };
 		A486AE562C8C9A7300E5A1FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A486AE552C8C9A7300E5A1FD /* RealmSwift */; };
 		A486AE582C8CBDD800E5A1FD /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486AE572C8CBDD800E5A1FD /* RealmHelper.swift */; };
 /* End PBXBuildFile section */
@@ -40,13 +42,15 @@
 		A43AAEAB2C8C883700965AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A43AAEAE2C8C883700965AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A43AAED22C8C8F3E00965AB1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A43AAED42C8C94A200965AB1 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		A43AAED62C8C950600965AB1 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		A457301E2D341C1300266218 /* MistralPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistralPhotoView.swift; sourceTree = "<group>"; };
 		A45730202D341E7D00266218 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A45730222D341F0B00266218 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A45730242D345F8D00266218 /* AIReceiptEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIReceiptEntriesView.swift; sourceTree = "<group>"; };
 		A45730272D3AB46F00266218 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		A457302B2D3ADDA800266218 /* ExpenseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseService.swift; sourceTree = "<group>"; };
+		A457302E2D3AF88200266218 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		A45730302D42687600266218 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A486AE572C8CBDD800E5A1FD /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +76,7 @@
 				A457301E2D341C1300266218 /* MistralPhotoView.swift */,
 				A45730242D345F8D00266218 /* AIReceiptEntriesView.swift */,
 				A45730272D3AB46F00266218 /* ChatView.swift */,
+				A43AAEA92C8C883600965AB1 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,14 +100,14 @@
 		A43AAEA62C8C883600965AB1 /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				A40889842C9034C80067CF9C /* Views */,
 				A43AAED12C8C8F1700965AB1 /* Helpers */,
+				A45730292D3ADD6000266218 /* Models */,
+				A457302A2D3ADD6500266218 /* Services */,
+				A457302D2D3ADE1600266218 /* ViewModels */,
+				A40889842C9034C80067CF9C /* Views */,
 				A43AAEA72C8C883600965AB1 /* Expense_TrackerApp.swift */,
-				A43AAED62C8C950600965AB1 /* Expense.swift */,
-				A43AAEA92C8C883600965AB1 /* ContentView.swift */,
 				A43AAEAB2C8C883700965AB1 /* Assets.xcassets */,
 				A43AAEAD2C8C883700965AB1 /* Preview Content */,
-				A43AAED42C8C94A200965AB1 /* ExpenseViewController.swift */,
 				A45730202D341E7D00266218 /* Config.xcconfig */,
 				A45730222D341F0B00266218 /* .gitignore */,
 				A45730262D3582B200266218 /* Temp */,
@@ -134,6 +139,31 @@
 				A408898B2C94AB640067CF9C /* PhotoAnalysisView.swift */,
 			);
 			path = Temp;
+			sourceTree = "<group>";
+		};
+		A45730292D3ADD6000266218 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A43AAED62C8C950600965AB1 /* Expense.swift */,
+				A45730302D42687600266218 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A457302A2D3ADD6500266218 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A457302B2D3ADDA800266218 /* ExpenseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A457302D2D3ADE1600266218 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A457302E2D3AF88200266218 /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,17 +246,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A457302C2D3ADDA800266218 /* ExpenseService.swift in Sources */,
 				A43AAEAA2C8C883600965AB1 /* ContentView.swift in Sources */,
 				A486AE582C8CBDD800E5A1FD /* RealmHelper.swift in Sources */,
-				A43AAED52C8C94A200965AB1 /* ExpenseViewController.swift in Sources */,
 				A40889832C9027FB0067CF9C /* Utils.swift in Sources */,
 				A408898A2C9381C20067CF9C /* GraphicalAnalysisView.swift in Sources */,
 				A457301F2D341C1300266218 /* MistralPhotoView.swift in Sources */,
 				A45730282D3AB46F00266218 /* ChatView.swift in Sources */,
 				A43AAEA82C8C883600965AB1 /* Expense_TrackerApp.swift in Sources */,
+				A457302F2D3AF88200266218 /* ChatViewModel.swift in Sources */,
 				A40889862C9034D60067CF9C /* ExpenseLog.swift in Sources */,
 				A43AAED32C8C8F3F00965AB1 /* Constants.swift in Sources */,
 				A40889882C9035330067CF9C /* AnalysisView.swift in Sources */,
+				A45730312D42687600266218 /* Message.swift in Sources */,
 				A43AAED72C8C950600965AB1 /* Expense.swift in Sources */,
 				A45730252D345F8D00266218 /* AIReceiptEntriesView.swift in Sources */,
 			);

@@ -1,2 +1,6 @@
-Configurations/Config.xcconfig
+*.xcconfig
+.env
+*.plist
+xcuserdata/
+xcshareddata/
 
