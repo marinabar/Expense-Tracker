@@ -8,4 +8,4 @@ The user can enter queries about their financial transactions. The assistant may
 
 
 Example of a conversation
-<img width="422" alt="Example of a conversation" src="https://github.com/user-attachments/assets/6e9f6852-cb13-4489-8b73-8c49c7ee4e4e" />
+![image](https://github.com/user-attachments/assets/a668a4e8-5ddd-4532-9d64-159f90f65cd5)
