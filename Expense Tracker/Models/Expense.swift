@@ -9,12 +9,12 @@ import RealmSwift
 import Foundation
 
 enum Category: String, CaseIterable {
-    case supermarket_food = "supermarket food"
+    case supermarket = "supermarket"
     case transportation
     case housing
     case entertainment
     case miscellaneous
-    case restaurant_dish = "restaurant dish"
+    case restaurant = "restaurant"
     case furniture
     case healthcare
     case beauty

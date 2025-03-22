@@ -16,34 +16,34 @@ struct ContentView: View {
             }
            .tabItem {
                 Image(systemName: "plus.app")
-                Text("Add Expense")
+                Text("Add")
             }.tag(0)
             NavigationStack {
                 AnalysisView()
             }
             .tabItem {
                   Image(systemName: "list.bullet")
-                  Text("Expenses")
+                  Text("List")
             }.tag(1)
             NavigationStack {
-                GraphicalAnalysisView()
+                CombinedView()
             }
-           .tabItem {
-                  Image(systemName: "chart.bar")
-                  Text("Insights")
+            .tabItem {
+                    Label("Overview", systemImage: "chart.bar")
             }.tag(2)
             NavigationStack {
                 MistralPhotoView()
             }
             .tabItem {
-                    Label("Save Receipt", systemImage: "photo")
-            }.tag(3)
+                    Label("Scan", systemImage: "photo")
+            }.tag(3).labelStyle(.iconOnly)
             NavigationStack {
                 ChatView()
             }
             .tabItem {
                     Label("Chat", systemImage: "bubble.left.and.text.bubble.right")
             }.tag(4)
+            
         }
         .accentColor(Constants.appTintColor)
     }

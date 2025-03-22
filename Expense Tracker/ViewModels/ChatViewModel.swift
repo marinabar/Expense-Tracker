@@ -278,7 +278,10 @@ class ChatViewModel: ObservableObject {
             "model": "mistral-small-latest",
             "messages": [
                 ["role": "system", "content": Constants.finAssistantSystemPrompt],
-                ["role": "user", "content": "Here is the expense data extracted from the database:\n\(resultsJSON)\n\nPlease analyze this data and based on this information answer the user's question : \(self.userQuestion)"]
+                ["role": "user", "content": Constants.postDBQueryPrompt
+                    .replacingOccurrences(of: "{resultsJSON}", with: resultsJSON)
+                    .replacingOccurrences(of: "{userQuestion}", with: self.userQuestion)
+                    ]
             ]
         ]
         if let request = Utils.createMistralAPIRequest(requestBody: requestBody) {

@@ -20,7 +20,7 @@ struct MistralPhotoView: View {
                     matching: .images,
                     photoLibrary: .shared()
                 ) {
-                    Text("Select Receipt Image")
+                    Text("Select receipt or transaction image")
                 }
                 .onChange(of: selectedItem) {
                     Task {
@@ -38,7 +38,7 @@ struct MistralPhotoView: View {
                     }
                 }
             }
-            .navigationTitle("Photo Analysis")
+            .navigationTitle("Document Recognition")
         }
     }
     
@@ -68,7 +68,7 @@ struct MistralPhotoView: View {
                 [
                     "role": "user",
                     "content": [
-                        ["type": "text", "text": "From this photo, find the receipt, extract : 1. the date in format yyyy-mm-dd 2. item names and associated prices, and infer the associated category of each item in (supermarket food, transportation, restaurant dish, entertainment, furniture, healthcare, beauty, clothing, snack, investement, miscellaneous) and extract total price and return it in a Json object. Don't add any comments. If one of the items has category restaurant dish, all of the items should be of restaurant dish category. If the photo is not directly a receipt, try your best to infer the right values. If there is no date, leave it empty. Follow the guidelines."],
+                        ["type": "text", "text": Constants.photoScanPrompt],
                         ["type": "image_url", "image_url": "data:image/jpeg;base64,\(imageData)"]
                     ]
                 ]

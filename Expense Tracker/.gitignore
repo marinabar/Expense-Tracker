@@ -3,4 +3,4 @@
 *.plist
 xcuserdata/
 xcshareddata/
-
+Temp/*

@@ -51,13 +51,20 @@ struct AIReceiptEntriesView: View {
         VStack {
             ScrollView {
                 VStack {
+                    Text("Manually edit the recognized data")
+                        .padding(5)
+                        .font(.title2)
+                        .background(Color.accentColor.opacity(0.1))
+                        .cornerRadius(8)
+                        
+                    Spacer()
                     if expenses.isEmpty {
                         Text("No expenses to display")
                     }
                     ForEach($expenses) { $expense in
                         VStack(alignment: .leading, spacing: 8) {
                             // Expense Name (left-aligned)
-                            Text(expense.name)
+                            TextField("Name", text: $expense.name)
                                 .font(.headline)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             

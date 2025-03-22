@@ -4,52 +4,6 @@
 //
 //  Created by Marina Barannikov on 17/01/2025.
 //
-
-import SwiftUI
-/*
-struct ChatView: View {
-    @StateObject private var viewModel = ChatViewModel()
-    @State private var executionResult: [String: Any] = [:]
-    @State private var executionJSON: String = ""
-
-    var body: some View {
-        VStack {
-            Button("Process JSON") {
-                let jsonString = """
-                {
-                    "Sum of restaurant dish expenses from 2024-07-22 to 2025-01-22": {
-                        "filters": [
-                            { "filter date": "2024-07-22 2025-01-22" },
-                            { "filter by category": "restaurant dish" },
-                            { "sum": "amounts" }
-                        ]
-                    },
-                    "List of restaurant dish expenses from 2024-07-22 to 2025-01-22": {
-                        "filters": [
-                            { "filter date": "2024-07-22 2025-01-22" },
-                            { "filter by category": "restaurant dish" }
-                        ]
-                    }
-                }
-                """
-                
-                let userQuery = "How much did I spend the last six months on restaurants?"
-                // return des résultats de la base de données
-                executionResult = viewModel.executeOperationChain(from: jsonString)
-                // convert swift dictionnary to JSON
-                executionJSON = viewModel.convertResultsToJSONString()
-                // create next prompt
-                let chatbotPrompt = viewModel.constructPrompt(requestsJSONOutput: executionJSON, userQuestion: userQuery)
-                print(chatbotPrompt)
-        
-            }
-        Text(executionJSON)
-        Text(viewModel.chatbotResponse)
-                .padding()
-        }
-    }
-}*/
-
 import SwiftUI
 
 struct ChatView: View {
@@ -84,6 +38,7 @@ struct ChatView: View {
                     }
                 }
             }
+            .padding(.top, 5)
 
             // Input field and send button
             HStack {
@@ -99,7 +54,8 @@ struct ChatView: View {
                 }
                 .disabled(viewModel.isSendingMessage)
             }
-            .padding()
+            .padding(.vertical, 3)
+            .padding(.horizontal, 4)
         }
     }
 }
@@ -113,7 +69,7 @@ struct MessageBubble: View {
                 Spacer()
                 Text(message.content)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.accentColor.opacity(0.8))
                     .foregroundColor(.white)
                     .cornerRadius(10)
             } else {
